@@ -1,14 +1,14 @@
-<h1 align="center">Hi 👋, I'm Nishchal Gaur</h1>
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> Hi, I'm Nishchal Gaur
+</h1>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=nk278&label=Profile%20views&color=0e75b6&style=flat" alt="nk278" />
 </p>
 
-
 <p align="center">
   <em>🌱 I’m currently learning <strong>Machine Learning, Data Science</strong></em>
 </p>
-
 <p align="center">
   <em>📫 How to reach me: <strong>nishchalgaur2003@gmail.com</strong></em>
 </p>
@@ -28,6 +28,11 @@
 <p align="center">
   <img src="https://skillicons.dev/icons?i=html,css,git,github,vscode,anaconda,figma,c,cpp,postman,python,java,azure,aws,mongodb,docker,pytorch,sklearn,tensorflow,matlab,latex,flask&perline=12" />
 </p>
+<div align="left">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=NK278&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="200" alt="languages graph"  />
+  <img src="https://streak-stats.demolab.com?user=NK278&locale=en&mode=weekly&theme=dracula&hide_border=false&border_radius=5&order=3" height="189" alt="streak graph"  />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=NK278&radius=16&theme=react&area=true&order=5" height="300" alt="activity-graph graph"  />
+</div>
 
 
 # 📊 GitHub Stats:
