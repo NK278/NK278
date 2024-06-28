@@ -28,18 +28,16 @@
 <p align="center">
   <img src="https://skillicons.dev/icons?i=html,css,git,github,vscode,anaconda,figma,c,cpp,postman,python,java,azure,aws,mongodb,docker,pytorch,sklearn,tensorflow,matlab,latex,flask&perline=12" />
 </p>
-<div align="left">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=NK278&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="200" alt="languages graph"  />
-  <img src="https://streak-stats.demolab.com?user=NK278&locale=en&mode=weekly&theme=dracula&hide_border=false&border_radius=5&order=3" height="189" alt="streak graph"  />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=NK278&radius=16&theme=react&area=true&order=5" height="300" alt="activity-graph graph"  />
-</div>
 
 
 # 📊 GitHub Stats:
 <div align="center" style="display: flex; flex-wrap: wrap; justify-content: center;">
-  <img src="https://github-readme-stats.vercel.app/api?username=NK278&theme=dark&hide_border=false&include_all_commits=false&count_private=false" style="margin: 10px;" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=NK278&theme=dark&hide_border=false" style="margin: 10px;" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NK278&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact" style="margin: 10px;" />
+<  <img src="https://github-readme-stats.vercel.app/api?username=NK278&theme=dracula&hide_border=false&include_all_commits=false&count_private=false" style="margin: 10px;" />
+<!--   <img src="https://github-readme-streak-stats.herokuapp.com/?user=NK278&theme=dark&hide_border=false" style="margin: 10px;" />  -->
+<!--   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NK278&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact" style="margin: 10px;" /> -->
+   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=NK278&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="200" alt="languages graph"  />
+  <img src="https://streak-stats.demolab.com?user=NK278&locale=en&mode=weekly&theme=dracula&hide_border=false&border_radius=5&order=3" height="189" alt="streak graph"  />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=NK278&radius=16&theme=react&area=true&order=5" height="300" alt="activity-graph graph"  />
 </div>
 
 ### ✍️ Random Dev Quote
