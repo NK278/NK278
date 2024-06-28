@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> Hi, I'm Nishchal Gaur
+  <img src="https://github.com/NK278/NK278/blob/NK278.github.io/animated-name.svg" alt="Hi 👋, I'm Nishchal Gaur">
 </h1>
 
 <p align="center">
