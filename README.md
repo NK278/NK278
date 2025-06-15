@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <em>🌱 I’m currently learning <strong>Machine Learning, Data Science</strong></em>
+  <em>🌱 I’m currently learning <strong>Machine Learning, Data Science & VLSI</strong></em>
 </p>
 <p align="center">
   <em>📫 How to reach me: <strong>nishchalgaur2003@gmail.com</strong></em>
