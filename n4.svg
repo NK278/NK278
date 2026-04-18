@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f98a3;stop-opacity:1">
+        <animate attributeName="stop-color" values="#4f98a3;#a86fdf;#4f98a3" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#a86fdf;stop-opacity:1">
+        <animate attributeName="stop-color" values="#a86fdf;#4f98a3;#a86fdf" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#6daa45;stop-opacity:1">
+        <animate attributeName="stop-color" values="#6daa45;#e8af34;#6daa45" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="typeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f98a3"/>
+      <stop offset="100%" style="stop-color:#a86fdf"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-10%" y="-30%" width="120%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#4f98a3" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Floating particles -->
+  <circle cx="60" cy="30" r="3" fill="#4f98a3" opacity="0.6">
+    <animate attributeName="cy" values="30;15;30" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="740" cy="80" r="2" fill="#a86fdf" opacity="0.5">
+    <animate attributeName="cy" values="80;65;80" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="12" r="2.5" fill="#6daa45" opacity="0.5">
+    <animate attributeName="cy" values="12;4;12" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="185" r="2" fill="#e8af34" opacity="0.4">
+    <animate attributeName="cy" values="185;175;185" dur="2.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="650" cy="20" r="3" fill="#4f98a3" opacity="0.5">
+    <animate attributeName="cy" values="20;8;20" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Greeting -->
+  <text x="400" y="34"
+    font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+    font-size="14" font-weight="500" letter-spacing="6"
+    text-anchor="middle" fill="#7a7974" opacity="0">
+    HI THERE 👋  I'M
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.2s" fill="freeze"/>
+  </text>
+
+  <!-- Floating name -->
+  <g filter="url(#shadow)">
+    <animateTransform attributeName="transform" type="translate"
+      values="0,0; 0,-6; 0,0" dur="3s" repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.45 0.05 0.55 0.95; 0.45 0.05 0.55 0.95"/>
+    <text x="400" y="95"
+      font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+      font-size="58" font-weight="800" letter-spacing="2"
+      text-anchor="middle" fill="url(#textGrad)" filter="url(#glow)" opacity="0">
+      Nishchal Gaur
+      <animate attributeName="opacity" values="0;1" dur="1s" begin="0.5s" fill="freeze"/>
+    </text>
+  </g>
+
+  <!-- Underline sweep -->
+  <rect x="200" y="107" width="0" height="3" rx="2" fill="url(#textGrad)" opacity="0.85">
+    <animate attributeName="width" values="0;400" dur="1s" begin="1s" fill="freeze"
+      calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+    <animate attributeName="x" values="400;200" dur="1s" begin="1s" fill="freeze"
+      calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+  </rect>
+
+  <!-- Terminal prefix -->
+  <text x="148" y="165"
+    font-family="'Fira Code','Courier New',monospace"
+    font-size="17" font-weight="600" fill="#4f98a3" opacity="0">
+    &gt;_
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.8s" fill="freeze"/>
+  </text>
+
+  <!--
+    Cycle = 25s per full loop (5 lines × 5s each)
+    Each line: visible only during its 5s window using opacity 0→1→1→0
+    keyTimes: 0=start, 0.06=fade in done, 0.80=start fade out, 1=gone
+    begin offsets: L1=2s, L2=7s, L3=12s, L4=17s, L5=22s
+    repeatCount=indefinite with dur=25s keeps them in sync forever
+  -->
+
+  <!-- Line 1: VLSI · RTL Design · FPGA  (active 2s–7s) -->
+  <text x="178" y="165"
+    font-family="'Fira Code','Courier New',monospace"
+    font-size="17" font-weight="600" fill="url(#typeGrad)"
+    opacity="0">
+    VLSI · RTL Design · FPGA
+    <animate attributeName="opacity"
+      values="0;1;1;0;0;0;0;0;0;0;0"
+      keyTimes="0;0.04;0.16;0.2;0.2;0.4;0.4;0.6;0.6;0.8;1"
+      dur="25s" begin="2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Line 2: Machine Learning · PINNs  (active 7s–12s) -->
+  <text x="178" y="165"
+    font-family="'Fira Code','Courier New',monospace"
+    font-size="17" font-weight="600" fill="url(#typeGrad)"
+    opacity="0">
+    Machine Learning · PINNs
+    <animate attributeName="opacity"
+      values="0;0;0;0;1;1;0;0;0;0;0"
+      keyTimes="0;0.04;0.16;0.2;0.24;0.36;0.4;0.6;0.6;0.8;1"
+      dur="25s" begin="2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Line 3: Estimation Theory · Kalman Filters  (active 12s–17s) -->
+  <text x="178" y="165"
+    font-family="'Fira Code','Courier New',monospace"
+    font-size="17" font-weight="600" fill="url(#typeGrad)"
+    opacity="0">
+    Estimation Theory · Kalman Filters
+    <animate attributeName="opacity"
+      values="0;0;0;0;0;0;1;1;0;0;0"
+      keyTimes="0;0.04;0.2;0.4;0.44;0.56;0.6;0.72;0.76;0.8;1"
+      dur="25s" begin="2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Line 4: Embedded Systems · ARM · RTOS  (active 17s–22s) -->
+  <text x="178" y="165"
+    font-family="'Fira Code','Courier New',monospace"
+    font-size="17" font-weight="600" fill="url(#typeGrad)"
+    opacity="0">
+    Embedded Systems · ARM · RTOS
+    <animate attributeName="opacity"
+      values="0;0;0;0;0;0;0;0;1;1;0"
+      keyTimes="0;0.2;0.4;0.6;0.64;0.76;0.8;0.84;0.88;0.96;1"
+      dur="25s" begin="2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Line 5: ECE @ IIIT Delhi  (active 22s–27s, wraps) -->
+  <text x="178" y="165"
+    font-family="'Fira Code','Courier New',monospace"
+    font-size="17" font-weight="600" fill="url(#typeGrad)"
+    opacity="0">
+    ECE @ IIIT Delhi
+    <animate attributeName="opacity"
+      values="0;0;0;0;0;0;0;0;0;0;1;1;0"
+      keyTimes="0;0.2;0.4;0.6;0.8;0.84;0.84;0.86;0.86;0.88;0.9;0.99;1"
+      dur="25s" begin="2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Blinking cursor -->
+  <rect x="178" y="148" width="10" height="20" rx="1" fill="#4f98a3" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;0;1;0;1;0;1;0;1;0;1;0"
+      dur="1s" begin="2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Bottom divider -->
+  <line x1="150" y1="182" x2="650" y2="182"
+    stroke="url(#typeGrad)" stroke-width="1" opacity="0.2"/>
+</svg>
